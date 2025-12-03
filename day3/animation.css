@@ -1,0 +1,61 @@
+
+        @keyframes Moveright
+        {
+            from
+            {
+                height: 100px;
+                width: 100px;
+
+            }
+            50%
+            {
+                transform: translateX(500px);
+            }
+            70%
+            {
+            transform: translateY(500px) translateX(500px);
+            }
+            80%
+            {
+                transform: translateX(0px)translateY(500px) ;
+
+            }
+            100%
+            {
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: aqua;
+            animation-name: Moveright;
+            animation-duration: 5s;
+            animation-iteration-count: 2;            
+        }
+    .emoji
+        {
+            font-size: 50px;
+            margin: 350px;
+            height:100px;
+            width: 100px;
+            animation-name: blink;
+            text-align: center;
+            /* background-color: rgb(199, 11, 11); */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+       @keyframes blink
+       {
+         from
+         {
+           transform: scale(1);
+         }
+         50%
+         {
+            transform: scale(1.5);
+         }
+        }
